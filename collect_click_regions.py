@@ -28,13 +28,15 @@ print('\n')
 print('Y input coordinates')
 print('X:' + '{0:5d}'.format(yInputx) + ', Y:' + '{0:5d}'.format(yInputy))
 
-# time.sleep(5)
-#
-# mc.moveTo(xInputx, xInputy, 2)
-# mc.click()
-#
-# mc.moveTo(yInputx, yInputy, 2)
-# mc.click()
+time.sleep(5)
+
+mc.moveTo(xInputx, xInputy, 2)
+mc.click(clicks=2)
+mc.typewrite('963')
+
+mc.moveTo(yInputx, yInputy, 0.5)
+mc.click(clicks=2)
+mc.typewrite('-98')
 #
 # mc.typewrite('facebook.com')
 # mc.press('enter')
